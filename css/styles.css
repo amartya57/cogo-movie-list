@@ -243,10 +243,6 @@ textarea:focus, input:focus{
         margin-bottom: 2rem;
     }
 
-    .rating-inner{
-        flex-wrap: wrap;
-    }
-
     .search{
         justify-content: flex-start;
     }
@@ -257,9 +253,28 @@ textarea:focus, input:focus{
 
     .search{
         flex: 75%;
+        min-width: 0;
     }
 
     .Site-Heading{
         flex: 75%;
+    }
+
+    .search-tab{
+        min-width: 0;
+    }
+}
+
+
+@media screen and (max-width : 910px){
+    .rating-inner{
+        flex-wrap: wrap;
+    }
+
+    .holder-back{
+        justify-content: space-around;
+    }
+    .btn-rating{
+        margin-top: 1rem;
     }
 }
