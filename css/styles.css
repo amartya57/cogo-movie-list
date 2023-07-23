@@ -231,9 +231,20 @@ textarea:focus, input:focus{
     display: none;
 }
 
-@media screen and (max-width : 800px) {
+@media screen and (max-width : 910px) {
     .holder{
         flex: 75%;
+    }
+
+    .holder-back{
+        flex: 75%;
+        height: 400px;
+        width: 75%;
+        margin-bottom: 2rem;
+    }
+
+    .rating-inner{
+        flex-wrap: wrap;
     }
 
     .search{
