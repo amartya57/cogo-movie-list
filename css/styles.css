@@ -1,0 +1,254 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image:url("../images/bg-new.jpg");
+    /* background-color: black; */
+    /* background-repeat: no-repeat; */
+    background-size: auto;
+    /* background-position: center; */
+}
+
+textarea{
+    border: none;
+}
+
+textarea:focus, input:focus{
+    outline: none;
+}
+
+.btn {
+	background-color:transparent;
+    margin-right: 3px;
+	border-radius:13px;
+	border:3px solid rgb(200, 196, 196);
+	display:inline-block;
+	cursor:pointer;
+	color:rgb(144, 142, 142);
+	font-family:Arial;
+	font-size:1.2rem;
+	padding:14px 40px;
+	text-decoration:none;
+    text-shadow: 0px 1px 0px rgb(110, 108, 108);
+    box-shadow: 0px 10px 0px rgb(110, 108, 108);
+}
+
+.srchlbl{
+    cursor: pointer;
+}
+
+.header{
+    padding: 0 3%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.Site-Heading{
+    font-size: 3rem;
+    color: white;
+    min-width: 200px;
+}
+
+.search{
+    min-width: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.label{
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding: 2% 2%;
+}
+
+.search-tab{
+    min-width: 200px;
+    padding: 2% 5%;
+    font-size: 14px;
+    height: 20px;
+    font-weight: 300;
+}
+
+#my-search-tab{
+    border: none;
+    border-radius: 10px;
+}
+
+.content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 5% 1%;
+}
+
+.holder{
+    flex: 45%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5rem;
+}
+
+.holder-back{
+    flex: 45%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    align-self: stretch;
+    max-height: 700px;
+}
+
+.info{
+    width: 80%;
+    color: white;
+    font-size: 2rem;
+    font-weight: bolder;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 9px 0;
+}
+
+.rating-back{
+    width: 80%;
+    text-align: left;
+    color: white;
+    font-size: 1.7rem;
+}
+
+.new-rating{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.rating-lbl{
+    flex: 100%;
+}
+
+#rating-search-tab{
+    border: none;
+    border-radius: 5px;
+    height: 20px;
+}
+
+.rating-inner{
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.btn-rating{
+    margin: 0 1rem;
+    padding: 7px 20px;
+    box-shadow: none;
+    border:3px solid rgb(111, 107, 107);
+    color: rgb(77, 75, 75);
+    font-weight: bolder;
+    box-shadow: none
+}
+
+.poster{
+    width: 95%;
+    display : flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.posterimg{
+    border-radius: 7%;
+    cursor: pointer;
+    max-width: 100%;
+    max-height: 700px;
+    width: 90%;
+}
+
+.title{
+    width: 80%;
+    color: white;
+    font-size: 2rem;
+    font-weight: bolder;
+    align-items: center;
+    text-align: center;
+    padding: 9px 0;
+}
+
+.rating{
+    width: 80%;
+    text-align: center;
+    color: white;
+    font-size: 1.7rem;
+}
+
+
+
+.button-holder{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    justify-content: space-around;
+    padding-bottom: 2rem; 
+}
+
+/* .popup-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.popup{
+    height: 80%;
+    width: 70%;
+    background-color: white;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    transition: 0.45s linear;
+} */
+
+.hide{
+    display: none;
+}
+
+@media screen and (max-width : 800px) {
+    .holder{
+        flex: 75%;
+    }
+
+    .search{
+        justify-content: flex-start;
+    }
+
+    .header{
+        justify-content: center;
+    }
+
+    .search{
+        flex: 75%;
+    }
+
+    .Site-Heading{
+        flex: 75%;
+    }
+}
