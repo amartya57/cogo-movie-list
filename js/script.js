@@ -3,7 +3,7 @@ let page=1;
 let max_page=1;
 let vis=false;
 // let path='http://www.omdbapi.com/?apikey=42a696fa&s=Man&page=2';
-let path='http://www.omdbapi.com/?apikey=42a696fa';
+let path='http://www.omdbapi.com/?apikey=c9449b8a';
 let movieData = [];
 
 // //Put code for searchbar here
@@ -174,8 +174,10 @@ function render(data){
     })
 
     hDivb.addEventListener('click', function(e){
-        hDiv.classList.remove("hide");
-        hDivb.classList.add("hide");
+        if(e.target==hDivb){
+            hDiv.classList.remove("hide");
+            hDivb.classList.add("hide");
+        }
     })
 }
 
