@@ -212,10 +212,18 @@ function getData(path, search_term, page=1){
     });
 }
 
-if(!vis){
-    vis=true;
+// if(!vis){
+//     vis=true;
+//     getData(path, search_term);
+// }
+
+setInterval(()=>{
+    search_term=document.getElementById("my-search-tab").value;
+    if(search_term==""){
+        search_term="man";
+    }
     getData(path, search_term);
-}
+}, 5000);
 
 
 let btnHolder=document.querySelector('.button-holder');
